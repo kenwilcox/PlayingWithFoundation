@@ -3,3 +3,38 @@ button, .button {
   border-color: slategray;
   color: whitesmoke;
 }
+
+.style-glow {
+  font-size: 1.9rem;
+  text-shadow: 2px 2px slategray;
+}
+
+.style-blue-pop {
+  font-size: 1.9rem;
+  color: #2DAEBF;
+  text-shadow: 0px 1px 0px #0092b3,0px 2px 0px #0087a6,0px 3px 0px #008099,0px 4px 0px #00758c,0px 5px 0px #555,0px 6px 0px #006a80,0px 0px 0px #006073,0px 8px 7px #005566;
+}
+
+.style-red-glow {
+  font-size: 1.9rem;
+  color: #E33100;
+  text-shadow: 0 0 5px #fff,0 0 10px #fff,0 0 15px #fff,0 0 20px #E33100,0 0 30px #E33100,0 0 40px #E33100,0 0 50px #E33100,0 0 75px #E33100;
+}
+
+.style-red-drop {
+  font-size: 1.9rem;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.25);
+  color: #A9014B;
+}
+
+.style-letterpress-orange {
+  font-size: 1.9rem;
+  color: rgba(245,159,26,0.8);
+  text-shadow: 1px 4px 6px #FFF,0 0 0 #000,1px 4px 6px #FFF;
+}
+
+.style-letterpress-blue {
+  font-size: 1.9rem;
+  color: rgba(21,18,212,0.76);
+  text-shadow: 1px 4px 6px #FFF,0 0 0 #000,1px 4px 6px #FFF;
+}

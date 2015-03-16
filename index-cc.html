@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/app.css">
     <link type="text/css" media="screen" rel="stylesheet" href="css/responsive-tables.css" />
     <link rel="stylesheet" href="fonts/foundation-icons.css">
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+    <!-- <link rel="stylesheet" href="owl-carousel/owl.theme.css"> -->
 
     <script src="js/vendor/modernizr.js"></script>
   </head>
@@ -49,9 +51,9 @@
       </div>
       
      
-     
       <div class="row">
-        <div class="large-4 columns text-center">
+        <div id="owl-example" class="owl-carousel">
+        <div class="text-center">
           <img src="img/Clerk-seal-transparent.gif"/>
           <ul class="pricing-table">
             <li class="title">Clerk</li>
@@ -65,7 +67,7 @@
           </ul>
         </div>
         
-        <div class="large-4 columns text-center">
+        <div class="text-center">
           <img src="img/2008-badge.gif"/>
           <ul class="pricing-table">
             <li class="title">Sheriff</li>
@@ -79,16 +81,51 @@
           </ul>
         </div>
         
-        <div class="large-4 columns text-center pa-fix">
+        <div class="text-center pa-fix">
           <img src="img/PA-coin-front.gif"/>
           <ul class="pricing-table">
             <li class="title">Prosecuting Attorney</li>
             <li>I'm sure something will go here</li>
           </ul>
         </div>
-      
+<div class="text-center">
+          <img src="img/Clerk-seal-transparent.gif"/>
+          <ul class="pricing-table">
+            <li class="title">Clerk</li>
+            <li class="description">County Clerk Offices</li>
+            <li class="bullet-item"><a href="#">Auditor</a></li>
+            <li class="bullet-item"><a href="#">Courts</a></li>
+            <li class="bullet-item"><a href="#">Elections</a></li>
+            <li class="bullet-item"><a href="#">Recorder</a></li>
+            <li class="bullet-item"><a href="#">Passports</a></li>
+            <!-- <li class="cta-button"><a class="button" href="#">Buy Now</a></li> -->
+          </ul>
         </div>
         
+        <div class="text-center">
+          <img src="img/2008-badge.gif"/>
+          <ul class="pricing-table">
+            <li class="title">Sheriff</li>
+            <li class="description">Sheriff Departments</li>
+            <li class="bullet-item"><a href="#">Administration</a></li>
+            <li class="bullet-item"><a href="#">Detention Center</a></li>
+            <li class="bullet-item"><a href="#">Emergency Management</a></li>
+            <li class="bullet-item"><a href="#">Patrol, Disptach, & Investigations</a></li>
+            <li class="bullet-item"><a href="#">Suicide Prevention</a></li>
+            <li class="bullet-item"><a href="#">Warrants Unit</a></li>
+          </ul>
+        </div>
+        
+        <div class="text-center pa-fix">
+          <img src="img/PA-coin-front.gif"/>
+          <ul class="pricing-table">
+            <li class="title">Prosecuting Attorney</li>
+            <li>I'm sure something will go here</li>
+          </ul>
+        </div>      
+
+        </div>
+      </div>
      
     <div class="row">
         <div class="large-12 columns">
@@ -132,8 +169,22 @@
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
     <script src="js/responsive-tables.js"></script>
+    <script src="owl-carousel/owl.carousel.js"></script>
     <script>
       $(document).foundation();
+
+      $(document).ready(function() {
+        $("#owl-example").owlCarousel({
+          items: 3,
+          //itemsCustom: [[0, 2], [400, 4], [700, 6], [1000, 8], [1200, 10], [1600, 16]],
+          singleItem: false,
+          responsive: true,
+          autoPlay: true,
+          stopOnHover: true,
+          rewindNav: true,
+          navigation: true,
+        });
+      });
     </script>
   </body>
 </html>

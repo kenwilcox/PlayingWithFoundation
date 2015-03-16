@@ -38,3 +38,11 @@ button, .button {
   color: rgba(21,18,212,0.76);
   text-shadow: 1px 4px 6px #FFF,0 0 0 #000,1px 4px 6px #FFF;
 }
+
+ .pricing-table .title {
+  background-color: green;
+}
+
+.pa-fix {
+  padding-top: 70px;
+}
